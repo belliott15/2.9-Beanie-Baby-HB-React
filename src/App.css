@@ -12,6 +12,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.card {
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+}
+
+.card:hover{
+  opacity: .8;
+}
 
 .beanie-baby {
   margin: 20px;
@@ -19,7 +28,14 @@ body {
 
 .beanie-baby .beanie-img {
   width: 200px;
+  border-radius: 40px;
 }
+
+.beanie-baby .beanie-img:hover {
+  width: 200px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
 
 .beanies {
   text-align: center;
@@ -27,7 +43,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
 }
 
 .beanie-detail {
@@ -54,4 +69,22 @@ body {
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
+}
+
+@keyframes pulse {
+  0%{ 
+    transform: rotateX(0deg);
+  }
+  25%{
+    transform: rotateX(30deg);
+  }
+  50%{
+    transform: rotateX(0deg);
+  }
+  75%{
+    transform: rotateX(-30deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+  }
 }
