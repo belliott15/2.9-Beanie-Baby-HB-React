@@ -7,7 +7,6 @@ function App() {
   const [beanieBabies, setBeanieBabies] = useState([]);
   const [page, setPage] = useState(1);
   const perPage = 40;
-  console.log(beanieBabies);
   
   useEffect(() => {
     async function fetch() {
