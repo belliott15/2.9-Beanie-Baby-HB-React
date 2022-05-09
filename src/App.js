@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Router>
       <div className='App'>
-        <h1>Beanie Baby</h1>
+        <h1>Beanie Baby Collection</h1>
         <Switch>
           <Route exact path="/">
             {/* this home page route should list all the beanies */}
